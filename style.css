@@ -6,11 +6,6 @@
 body {
   scroll-behavior: smooth;
 }
-body .main-body {
-  width: 100%;
-  height: 100dvh;
-  position: relative;
-}
 /* ====================== HOME ====================== */
 .background-image {
   background-image: url(./assets/home/background-home-desktop.jpg);
@@ -20,17 +15,19 @@ body .main-body {
 }
 .container {
   width: 90%;
-  height: 80vh;
-  margin: auto;
   display: flex;
   align-items: flex-end;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
 }
 .container .texts {
-  width: 50%;
+  width: 80%;
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
 }
 .container .texts p:nth-of-type(1) {
@@ -363,45 +360,44 @@ section.active {
 @media (max-width: 1024px) {
   .background-image {
     background-image: url(./assets/home/background-home-tablet.jpg);
-    width: 100%;
-    height: 100vh;
     background-size: cover;
   }
   .container {
-    width: 100%;
-    height: 100dvh;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 0 40px;
     align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
   }
   .container .texts {
-    width: 90%;
+    width: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    padding: 50px 0;
   }
   .container .texts p:nth-of-type(1) {
     font-size: 2rem;
     color: #d0d6f9;
     padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
   }
   .container .texts h6 {
     font-size: 5.5rem;
     padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
   }
   .container .texts p:nth-of-type(2) {
     font-size: 24px;
-    width: 80%;
+    width: 100%;
     line-height: 35px;
     color: #d0d6f9;
     text-align: center;
-    padding-bottom: 30px;
+    padding:30px 20px;
+
   }
   .container > div {
     display: flex;
@@ -497,7 +493,7 @@ section.active {
     align-items: center;
   }
   .content .img img {
-    width: 400px;
+    width: 350px;
     padding-bottom: 20px;
   }
   .content .info {
@@ -723,8 +719,7 @@ section.active {
     background-size: cover;
   }
   .container {
-    width: 100%;
-    height: 100dvh;
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -764,8 +759,8 @@ section.active {
   .container button {
     border: none;
     font-size: 1.5rem;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -848,16 +843,14 @@ section.active {
   }
   .content {
     display: flex;
-    width: 100%;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    height: 80%;
   }
   .content .img img {
     padding-top: 20px;
-    width: 150px;
+    width: 280px;
   }
   .content .info {
     display: flex;
@@ -869,7 +862,6 @@ section.active {
     display: flex;
   }
   .info .plant-info {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -878,7 +870,7 @@ section.active {
     color: rgba(255, 255, 255, 0.548);
     list-style: none;
     padding: 5px 0;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 16px;
     letter-spacing: 2px;
     cursor: pointer;
@@ -888,7 +880,7 @@ section.active {
     color: white;
   }
   .plant-info h1 {
-    font-size: 36px;
+    font-size: 56px;
     color: white;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -920,17 +912,15 @@ section.active {
 
   .crew {
     background-image: url(./assets/crew/background-crew-mobile.jpg);
-    width: 100%;
-    height: 100dvh;
     background-size: cover;
   }
 
   .crew h6 {
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     margin-left: 20px;
     letter-spacing: 3px;
-    padding-top: 20px;
+    text-align: center;
   }
   .crew h6 span {
     margin-right: 5px;
@@ -941,25 +931,12 @@ section.active {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     padding: 20px;
-  }
-  .crew-image img {
-    /* padding-top: 50px; */
-    height: 300px;
-    margin: 0;
-    padding: 0;
-  }
-  .crew-image {
-    margin-top: 50px;
+    width: 100%;
   }
   .crew-info {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    height: fit-content;
   }
   .crew-info:first-child {
     text-align: center;
@@ -968,13 +945,13 @@ section.active {
     font-size: 22px;
     color: rgba(255, 255, 255, 1);
     letter-spacing: 3px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .crew-info .title {
     font-size: 16px;
     width: 100%;
     color: #d0d6f9;
-    padding-top: 10px;
+    padding-top: 20px;
     line-height: 25px;
     text-align: center;
   }
@@ -986,14 +963,12 @@ section.active {
   .bolts {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
   }
   .bolts > span {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 20px;
     background-color: #d0d6f9;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
@@ -1005,21 +980,19 @@ section.active {
 
   .technology {
     background-image: url(./assets/technology/background-technology-mobile.jpg);
-    width: 100%;
-    height: 100dvh;
     background-size: cover;
   }
   .technology h6 {
-    padding-top: 60px;
+    padding-top: 70px;
     font-size: 22px;
     color: white;
     letter-spacing: 3px;
+    text-align: center;
   }
   .content-technology {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 0;
     flex-direction: column-reverse;
     padding-top: 50px;
   }
@@ -1032,6 +1005,7 @@ section.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .technology .content-technology .header .techno-icon {
     display: flex;
@@ -1048,33 +1022,25 @@ section.active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
   .content-technology .main {
     padding-left: 0;
-    height: 100%;
   }
   .main .head {
-    width: 100%;
     text-align: center;
     font-size: 18px;
   }
   .technology-name {
-    font-size: 26px;
-    width: 100%;
+    font-size: 46px;
     text-align: center;
-    margin: 0;
-    padding: 0;
   }
   .technology-info {
-    width: 90%;
-    margin: auto;
-    /* text-align: center; */
-    font-size: 18px;
+    font-size: 26px;
+    width: 100%;
+    padding: 30px 10px;
   }
   .technology-img img {
-    height: 200px;
+    height: 300px;
+    padding-bottom: 50px;
   }
 }
