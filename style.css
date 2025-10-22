@@ -1,0 +1,1081 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  scroll-behavior: smooth;
+}
+body .main-body {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+}
+/* ====================== HOME ====================== */
+.background-image {
+  background-image: url(./assets/home/background-home-desktop.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.container {
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+}
+.container .texts {
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .texts p:nth-of-type(1) {
+  font-size: 28px;
+  color: #d0d6f9;
+}
+.container .texts h6 {
+  font-size: 144px;
+}
+.container .texts p:nth-of-type(2) {
+  font-size: 16px;
+  width: 70%;
+  line-height: 24px;
+  color: #d0d6f9;
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container button {
+  border: none;
+  font-size: 28px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container button:hover {
+  outline: 40px solid rgba(255, 255, 255, 0.1);
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+}
+.navbar ul {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(80px);
+}
+#menu-icon {
+  font-size: 30px;
+  display: none !important;
+  cursor: pointer;
+  z-index: 9999;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 0 20px;
+  border-bottom: 2px solid transparent;
+  color: gray;
+}
+/* WHEN USER*/
+.navbar ul .active {
+  border-color: rgb(255, 255, 255);
+  color: white;
+}
+.navbar ul li:nth-of-type(1) {
+  margin-left: 60px;
+}
+.navbar ul li a {
+  padding: 20px 0;
+  text-decoration: none;
+  color: gray;
+  letter-spacing: 3px;
+  display: block;
+}
+.navbar ul li span {
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-right: 5px;
+}
+/* ====================== HOME ====================== */
+
+/* ======================  DESTINATION ====================== */
+.destination {
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.destination h6 {
+  padding-top: 110px;
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  letter-spacing: 3px;
+}
+.destination h6 span {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.content {
+  display: flex;
+  width: 80%;
+  margin: 80px auto;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.content .img {
+  width: 50%;
+}
+.content .info {
+  width: 50%;
+  height: 449px;
+}
+.navbar-plants ul {
+  display: flex;
+}
+.navbar-plants ul li {
+  color: rgba(255, 255, 255, 0.548);
+  list-style: none;
+  padding: 10px 0;
+  margin-right: 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.navbar-plants ul .active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+.plant-info h1 {
+  font-size: 72px;
+  color: white;
+}
+.description {
+  color: rgb(114, 110, 110);
+  font-size: 20px;
+  line-height: 35px;
+  padding-bottom: 40px;
+}
+.plant-info .main {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.test {
+  color: rgb(158, 158, 158);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.dist,
+.time {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+/* ======================  DESTINATION ====================== */
+/* ======================  CREW ====================== */
+.crew {
+  background-image: url(./assets/crew/background-crew-desktop.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.crew h6 {
+  padding-top: 110px;
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  letter-spacing: 3px;
+}
+.crew h6 span {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.content-crew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.crew-image img {
+  width: 400px;
+  height: 500px;
+}
+.crew-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.crew-info > div {
+  height: 100%;
+}
+.crew-info > div :first-child {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+.crew-info .title {
+  font-size: 18px;
+  width: 70%;
+  color: #d0d6f9;
+  padding-top: 20px;
+  line-height: 30px;
+  height: 150px;
+}
+.crew-info > div b {
+  font-size: 56px;
+  color: white;
+  letter-spacing: 2px;
+}
+.bolts {
+  display: flex;
+  padding-top: 150px;
+  width: 50%;
+  justify-content: flex-end;
+}
+.bolts > span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #d0d6f9;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.bolts .active {
+  background-color: white;
+}
+/* ======================  CREW ====================== */
+/* ======================  TECHNOLOGY ====================== */
+.technology {
+  background-image: url(./assets/technology/background-technology-desktop.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.technology h6 {
+  padding-top: 110px;
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  letter-spacing: 3px;
+}
+.technology h6 span {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.content-technology {
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80%;
+}
+.content-technology > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content-technology > div > div span {
+  color: rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  max-height: 300px;
+}
+.content-technology > div > div .active {
+  background-color: white;
+  color: black;
+}
+.content-technology .head {
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.technology-img img {
+  width: 100%;
+  height: 500px;
+}
+.technology-name {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+.technology-info {
+  color: rgba(255, 255, 255, 0.512);
+  font-size: 18px;
+  line-height: 30px;
+  width: 80%;
+  padding-top: 20px;
+}
+.content-technology .main {
+  padding-left: 50px;
+  height: 100%;
+}
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+section.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ======================  TECHNOLOGY ====================== */
+/* ===================================================== */
+@media (max-width: 1024px) {
+  .background-image {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .container {
+    width: 100%;
+    height: 100dvh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 40px;
+    align-items: center;
+  }
+  .container .texts {
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container .texts p:nth-of-type(1) {
+    font-size: 2rem;
+    color: #d0d6f9;
+    padding-bottom: 30px;
+  }
+  .container .texts h6 {
+    font-size: 5.5rem;
+    padding-bottom: 30px;
+  }
+  .container .texts p:nth-of-type(2) {
+    font-size: 24px;
+    width: 80%;
+    line-height: 35px;
+    color: #d0d6f9;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+  }
+  .container button {
+    border: none;
+    font-size: 1.5rem;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .container button:hover {
+    outline: 40px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .navbar ul {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(80px);
+  }
+  #menu-icon {
+    font-size: 30px;
+    display: none !important;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .navbar ul li {
+    list-style: none;
+    margin: 0 1.25rem;
+    border-bottom: 2px solid transparent;
+    color: gray;
+  }
+  /* WHEN USER*/
+  .navbar ul .active {
+    border-color: rgb(255, 255, 255);
+    color: white;
+  }
+  .navbar ul li:nth-of-type(1) {
+    margin-left: 30px;
+  }
+  .navbar ul li a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 3px;
+    display: block;
+  }
+  .navbar ul li span {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-right: 5px;
+  }
+  /* ============================================ */
+  .destination {
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+  }
+  .destination h6 {
+    padding-top: 110px;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    letter-spacing: 3px;
+  }
+  .destination h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .content .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .img img {
+    width: 400px;
+    padding-bottom: 20px;
+  }
+  .content .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-plants ul {
+    display: flex;
+  }
+  .info .plant-info {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-plants ul li {
+    color: rgba(255, 255, 255, 0.548);
+    list-style: none;
+    padding: 10px 0;
+    margin-right: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .navbar-plants ul .active {
+    border-bottom: 3px solid white;
+    color: white;
+  }
+  .plant-info h1 {
+    font-size: 72px;
+    color: white;
+  }
+  .description {
+    color: rgb(114, 110, 110);
+    font-size: 20px;
+    line-height: 35px;
+    padding: 20px 0;
+    height: 170px;
+
+    text-align: center;
+  }
+  .plant-info .main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+  }
+  .test {
+    color: rgb(158, 158, 158);
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .dist,
+  .time {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+  }
+  .main .one,
+  .main .two {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ========================== */
+  .crew {
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .crew h6 {
+    padding-top: 110px;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    letter-spacing: 3px;
+  }
+  .crew h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .content-crew {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .crew-image img {
+    padding-top: 50px;
+    width: 350px;
+  }
+  .crew-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .crew-info:first-child {
+    text-align: center;
+  }
+  .crew-info > div :first-child {
+    font-size: 42px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+  .crew-info .title {
+    font-size: 22px;
+    width: 70%;
+    color: #d0d6f9;
+    padding-top: 20px;
+    line-height: 30px;
+    margin: auto;
+  }
+  .crew-info > div b {
+    font-size: 56px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .bolts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding-top: 80px;
+  }
+  .bolts > span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d0d6f9;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  .bolts .active {
+    background-color: white;
+  }
+
+  /* ========================================== */
+
+  .technology {
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+  }
+  .technology h6 {
+    padding-top: 110px;
+    font-size: 26px;
+    color: white;
+    margin-left: 30px;
+    letter-spacing: 3px;
+  }
+  .content-technology {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+  .technology h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .technology .content-technology .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .technology .content-technology .header .techno-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .content-technology .header .techno-icon span {
+    margin-left: 20px;
+  }
+  .content-technology .header .techno-icon .main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .main .head {
+    width: 100%;
+    text-align: center;
+  }
+  .technology-name {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+  }
+  .technology-info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* ===================================================== */
+@media (max-width: 768px) {
+  .background-image {
+    background-image: url(./assets/home/background-home-mobile.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+  }
+  .container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 70px 24px;
+    align-items: center;
+  }
+  .container .texts {
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .container .texts p:nth-of-type(1) {
+    font-size: 1.25rem;
+    color: #d0d6f9;
+    padding: 10px 0;
+  }
+  .container .texts h6 {
+    font-size: 4rem;
+  }
+  .container .texts p:nth-of-type(2) {
+    font-size: 16px;
+    width: 100%;
+    color: #d0d6f9;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container button {
+    border: none;
+    font-size: 1.5rem;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .container button:hover {
+    outline: 20px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+    height: 70%;
+  }
+  .navbar ul {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(80px);
+  }
+  #menu-icon {
+    font-size: 30px;
+    display: block !important;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+  }
+  .navbar ul li {
+    list-style: none;
+    margin: 1.25rem 0;
+    border-bottom: 2px solid transparent;
+    color: gray;
+  }
+  /* WHEN USER*/
+  .navbar ul .active {
+    border-color: rgb(255, 255, 255);
+    color: white;
+  }
+  .navbar ul li:nth-of-type(1) {
+    margin-bottom: 15px;
+  }
+  .navbar ul li a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 3px;
+    display: block;
+  }
+  .navbar ul li span {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-right: 5px;
+  }
+  /* =========================================== */
+  .destination {
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    width: 100%;
+    max-height: 100dvh;
+    background-size: cover;
+  }
+  .destination h6 {
+    padding-top: 80px;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .destination h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .content .img img {
+    padding-top: 20px;
+    width: 150px;
+  }
+  .content .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-plants ul {
+    display: flex;
+  }
+  .info .plant-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-plants ul li {
+    color: rgba(255, 255, 255, 0.548);
+    list-style: none;
+    padding: 5px 0;
+    margin-right: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .navbar-plants ul .active {
+    border-bottom: 3px solid white;
+    color: white;
+  }
+  .plant-info h1 {
+    font-size: 36px;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .description {
+    color: rgb(114, 110, 110);
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+  .plant-info .main {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .test {
+    color: rgb(158, 158, 158);
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .dist,
+  .time {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+  }
+  /* ==================================== */
+
+  .crew {
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+  }
+
+  .crew h6 {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    letter-spacing: 3px;
+    padding-top: 20px;
+  }
+  .crew h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .content-crew {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+  }
+  .crew-image img {
+    /* padding-top: 50px; */
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .crew-image {
+    margin-top: 50px;
+  }
+  .crew-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .crew-info:first-child {
+    text-align: center;
+  }
+  .crew-info > div :first-child {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+  .crew-info .title {
+    font-size: 16px;
+    width: 100%;
+    color: #d0d6f9;
+    padding-top: 10px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .crew-info > div b {
+    font-size: 26px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .bolts {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .bolts > span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d0d6f9;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  .bolts .active {
+    background-color: white;
+  }
+  /* ================================= */
+
+  .technology {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+  }
+  .technology h6 {
+    padding-top: 60px;
+    font-size: 22px;
+    color: white;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+  .content-technology {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+  .technology h6 span {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .technology .content-technology .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .technology .content-technology .header .techno-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .content-technology .header .techno-icon span {
+    margin-left: 10px;
+  }
+  .content-technology .header .techno-icon .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .content-technology .main {
+    padding-left: 0;
+    height: 100%;
+  }
+  .main .head {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .technology-name {
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .technology-info {
+    width: 90%;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 18px;
+  }
+  .technology-img img {
+    height: 200px;
+  }
+}
