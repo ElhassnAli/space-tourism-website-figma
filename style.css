@@ -357,7 +357,7 @@ section.active {
 
 /* ======================  TECHNOLOGY ====================== */
 /* ===================================================== */
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 997px) {
   .background-image {
     background-image: url(./assets/home/background-home-tablet.jpg);
     background-size: cover;
@@ -367,12 +367,8 @@ section.active {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left: 0;
-    width: 100%;
   }
   .container .texts {
-    width: 100%;
     color: white;
     text-align: center;
     padding: 50px 0;
@@ -382,13 +378,11 @@ section.active {
     color: #d0d6f9;
     padding-bottom: 30px;
     text-align: center;
-    width: 100%;
   }
   .container .texts h6 {
     font-size: 5.5rem;
     padding-bottom: 30px;
     text-align: center;
-    width: 100%;
   }
   .container .texts p:nth-of-type(2) {
     font-size: 24px;
@@ -396,14 +390,13 @@ section.active {
     line-height: 35px;
     color: #d0d6f9;
     text-align: center;
-    padding:30px 20px;
-
+    padding: 30px 20px;
   }
   .container > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100;
+    width: 100%;
   }
   .container button {
     border: none;
@@ -417,7 +410,6 @@ section.active {
     outline: 40px solid rgba(255, 255, 255, 0.1);
   }
   .navbar {
-    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -466,8 +458,6 @@ section.active {
   /* ============================================ */
   .destination {
     background-image: url(./assets/destination/background-destination-tablet.jpg);
-    width: 100%;
-    height: 100dvh;
     background-size: cover;
   }
   .destination h6 {
@@ -497,7 +487,6 @@ section.active {
     padding-bottom: 20px;
   }
   .content .info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -507,7 +496,6 @@ section.active {
     display: flex;
   }
   .info .plant-info {
-    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -541,7 +529,6 @@ section.active {
   }
   .plant-info .main {
     display: flex;
-    width: 90%;
     margin: auto;
     justify-content: space-between;
     /* margin-top: 20px; */
@@ -559,15 +546,12 @@ section.active {
   }
   .main .one,
   .main .two {
-    width: 100%;
     text-align: center;
   }
 
   /* ========================== */
   .crew {
     background-image: url(./assets/crew/background-crew-tablet.jpg);
-    width: 100%;
-    height: 100vh;
     background-size: cover;
   }
 
@@ -593,7 +577,6 @@ section.active {
     width: 350px;
   }
   .crew-info {
-    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -610,7 +593,6 @@ section.active {
   }
   .crew-info .title {
     font-size: 22px;
-    width: 70%;
     color: #d0d6f9;
     padding-top: 20px;
     line-height: 30px;
@@ -644,8 +626,6 @@ section.active {
 
   .technology {
     background-image: url(./assets/technology/background-technology-tablet.jpg);
-    width: 100%;
-    height: 100dvh;
     background-size: cover;
   }
   .technology h6 {
@@ -659,7 +639,6 @@ section.active {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     margin: 0;
     flex-direction: column-reverse;
     padding-top: 50px;
@@ -691,7 +670,6 @@ section.active {
     align-items: center;
     margin: 0;
     padding-left: 0;
-    width: 100%;
   }
   .main .head {
     width: 100%;
@@ -703,7 +681,6 @@ section.active {
     font-size: 36px;
   }
   .technology-info {
-    width: 80%;
     margin: auto;
     text-align: center;
     font-size: 18px;
@@ -714,12 +691,9 @@ section.active {
 @media (max-width: 768px) {
   .background-image {
     background-image: url(./assets/home/background-home-mobile.jpg);
-    width: 100%;
-    height: 100dvh;
     background-size: cover;
   }
   .container {
-    width: 100%; 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -745,7 +719,6 @@ section.active {
   }
   .container .texts p:nth-of-type(2) {
     font-size: 16px;
-    width: 100%;
     color: #d0d6f9;
     text-align: center;
     padding-top: 20px;
@@ -754,7 +727,6 @@ section.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
   .container button {
     border: none;
@@ -824,8 +796,6 @@ section.active {
   /* =========================================== */
   .destination {
     background-image: url(./assets/destination/background-destination-mobile.jpg);
-    width: 100%;
-    max-height: 100dvh;
     background-size: cover;
   }
   .destination h6 {
@@ -846,7 +816,6 @@ section.active {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 80%;
   }
   .content .img img {
     padding-top: 20px;
@@ -892,7 +861,6 @@ section.active {
     padding-top: 10px;
   }
   .plant-info .main {
-    width: 100%;
     display: flex;
     margin: 0;
     padding-top: 25px;
@@ -932,7 +900,6 @@ section.active {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    width: 100%;
   }
   .crew-info {
     display: flex;
@@ -949,7 +916,6 @@ section.active {
   }
   .crew-info .title {
     font-size: 16px;
-    width: 100%;
     color: #d0d6f9;
     padding-top: 20px;
     line-height: 25px;
@@ -992,7 +958,6 @@ section.active {
   .content-technology {
     display: flex;
     align-items: center;
-    width: 100%;
     flex-direction: column-reverse;
     padding-top: 50px;
   }
@@ -1005,7 +970,6 @@ section.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
   .technology .content-technology .header .techno-icon {
     display: flex;
@@ -1023,9 +987,6 @@ section.active {
     justify-content: space-between;
     align-items: center;
   }
-  .content-technology .main {
-    padding-left: 0;
-  }
   .main .head {
     text-align: center;
     font-size: 18px;
@@ -1036,11 +997,9 @@ section.active {
   }
   .technology-info {
     font-size: 26px;
-    width: 100%;
     padding: 30px 10px;
   }
   .technology-img img {
-    height: 300px;
     padding-bottom: 50px;
   }
 }
