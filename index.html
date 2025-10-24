@@ -11,14 +11,35 @@
     />
   </head>
   <body>
-    <div class="main-body">
+    <div class="main-container">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul>
+          <li class="active">
+            <a href="#Home"><span>00</span>HOME</a>
+          </li>
+          <li>
+            <a href="#destination"><span>01</span>DESTINATION</a>
+          </li>
+          <li>
+            <a href="#crew"><span>02</span>CREW</a>
+          </li>
+          <li>
+            <a href="#technology"><span>03</span>TECHNOLOGY</a>
+          </li>
+        </ul>
+        <div>
+          <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
       <!-- Home Page -->
-      <section class="background-image" id="Home">
+      <section class="home active" id="Home">
         <div class="container">
-          <div class="texts">
-            <p>SO, YOU WANT TO TRAVEL TO</p>
-            <h6>SPACE</h6>
-            <p style="width: 100%;">
+          <div class="home-header">
+            <p class="p-one">SO, YOU WANT TO TRAVEL TO</p>
+            <h1>SPACE</h1>
+            <p class="p-two">
               Let’s face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relax because we’ll give you a truly out of
@@ -31,34 +52,15 @@
         </div>
       </section>
       <!-- Home Page -->
-      <!-- NAVBAR -->
-      <div class="navbar">
-        <ul>
-          <li class="active">
-            <a href="#Home"><span>00</span>HOME</a>
-          </li>
-          <li>
-            <a href="#destination"> <span>01</span>DESTINATION</a>
-          </li>
-          <li>
-            <a href="#crew"><span>02</span>CREW</a>
-          </li>
-          <li>
-            <a href="#technology"><span>03</span>TECHNOLOGY</a>
-          </li>
-        </ul>
-      </div>
-      <i id="menu-icon" class="fa-solid fa-bars"></i>
-      <!-- NAVBAR -->
       <!-- DESTINATION -->
       <section class="destination" id="destination">
-        <h6><span>01</span>PICK YOUR DESTINATION</h6>
-        <div class="content">
+        <h1 class="destination-header"><span>01</span>PICK YOUR DESTINATION</h1>
+        <div class="destination-main">
           <div class="img">
             <img src="./assets/destination/image-moon.png" />
           </div>
           <div class="info">
-            <div class="navbar-plants">
+            <div class="nav-plants">
               <ul>
                 <li class="active">MOON</li>
                 <li>MARS</li>
@@ -67,8 +69,8 @@
               </ul>
             </div>
             <div class="plant-info">
-              <h1>MOON</h1>
-              <p class="description">
+              <h1 class="planet-name">MOON</h1>
+              <p class="planet-description color">
                 See our planet as you’ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
                 refreshed. While you’re there, take in some history by visiting
@@ -92,16 +94,16 @@
       <!-- DESTINATION -->
       <!-- CREW -->
       <section class="crew" id="crew">
-        <h6><span>02</span>MEET YOUR CREW</h6>
-        <div class="content-crew">
+        <h1 class="destination-header"><span>02</span>MEET YOUR CREW</h1>
+        <div class="crew-main">
           <div class="crew-info">
             <div>
               <p class="rank">COMMANDER</p>
-              <b class="name">DOUGLAS HURLEY</b>
+              <p class="name">DOUGLAS HURLEY</p>
               <p class="title">
                 Douglas Gerald Hurley is an American engineer, former Marine
                 Corps pilot and former NASA astronaut. He launched into space
-                for the third time as commander of Crew Dragon Demo-2.
+                for the third time as commander of Crew Dragon
               </p>
             </div>
             <div class="bolts">
@@ -119,7 +121,7 @@
       <!-- CREW -->
       <!-- TECHNOLOGY -->
       <section class="technology" id="technology">
-        <h6><span>03</span>SPACE LAUNCH 101</h6>
+        <h1 class="destination-header"><span>03</span>SPACE LAUNCH 101</h1>
         <div class="content-technology">
           <div class="header">
             <div class="techno-icon">
@@ -129,7 +131,7 @@
             </div>
             <div class="main">
               <p class="head">THE TERMINOLOGY…</p>
-              <b class="technology-name">LAUNCH VEHICLE</b>
+              <p class="technology-name">LAUNCH VEHICLE</p>
               <p class="technology-info">
                 A launch vehicle or carrier rocket is a rocket-propelled vehicle
                 used to carry a payload from Earth's surface to space, usually

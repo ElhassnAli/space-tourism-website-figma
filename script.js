@@ -1,9 +1,10 @@
 // ================== GLOBAL DATA ==================
-let mainNav = document.querySelectorAll(".navbar ul li");
+let mainNav = document.querySelectorAll("nav ul li");
 let sections = document.querySelectorAll("section");
 let exploreBtn = document.querySelector(".button button");
+let burgerIcons = document.getElementById("menu-icon");
+let nav = document.querySelector(".navbar ul");
 let data = {};
-
 fetch("data.json")
   .then((res) => res.json())
   .then((json) => {
@@ -17,6 +18,7 @@ exploreBtn.addEventListener("click", () => {
   mainNav.forEach((el) => {
     el.classList.remove("active");
     mainNav[1].classList.add("active");
+
     sections.forEach((sec) => {
       sec.classList.remove("active");
       sections[1].classList.add("active");
@@ -31,7 +33,6 @@ mainNav.forEach((el, index) => {
   el.addEventListener("click", () => {
     mainNav.forEach((el, index) => el.classList.remove("active"));
     sections.forEach((el, index) => el.classList.remove("active"));
-
     el.classList.add("active");
     sections[index].classList.add("active");
     //=======================
@@ -39,7 +40,7 @@ mainNav.forEach((el, index) => {
 });
 // ================== NAVBAR ==================
 // ================== DESTINATION ==================
-let navbar = document.querySelectorAll(".navbar-plants ul li");
+let navbar = document.querySelectorAll(".nav-plants ul li");
 navbar.forEach((ele, index) => {
   ele.addEventListener("click", () => {
     navbar.forEach((ele) => ele.classList.remove("active"));
@@ -55,9 +56,9 @@ function destinations(data, index) {
   let Data = data.destinations[index];
   if (!Data) return;
 
-  let image = document.querySelector(" img");
+  let image = document.querySelector("img");
   let title = document.querySelector(".plant-info h1");
-  let description = document.querySelector(".description");
+  let description = document.querySelector(".planet-description");
   let distance = document.querySelector(".dist");
   let time = document.querySelector(".time");
 
@@ -122,8 +123,6 @@ function technology(data, index) {
 }
 // ================== TECHNOLOGY ==================
 
-let burgerIcons = document.getElementById("menu-icon");
-let nav = document.querySelector(".navbar");
 burgerIcons.addEventListener("click", () => {
   if (burgerIcons.classList.contains("fa-bars")) {
     burgerIcons.classList.remove("fa-bars");
