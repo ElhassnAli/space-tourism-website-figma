@@ -124,13 +124,12 @@ function technology(data, index) {
 // ================== TECHNOLOGY ==================
 
 burgerIcons.addEventListener("click", () => {
+  nav.classList.toggle("show");
   if (burgerIcons.classList.contains("fa-bars")) {
     burgerIcons.classList.remove("fa-bars");
     burgerIcons.classList.add("fa-xmark");
-    nav.style.display = "block";
   } else {
     burgerIcons.classList.remove("fa-xmark");
     burgerIcons.classList.add("fa-bars");
-    nav.style.display = "none";
   }
 });
